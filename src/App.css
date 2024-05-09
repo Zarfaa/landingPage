@@ -2,53 +2,21 @@ html {
     background-color: #6D3705;
   }
   
+.text_color{
+    color: #FFFBD5;
+}
 
-  #flip {
-    height: 3vw;
-    overflow: hidden;
+.animation{
+  animation: animation 2s forwards;
+}
+
+@keyframes animation {
+  from {
+      opacity: 0;
+      transform: translateY(0);
   }
-  
-  #flip > div > div {
-    color: #E6E3DD;
-    padding: 1%;
-    height: 50px;
-    display: block;
+  to {
+      opacity: 2;
+      transform: translateY(-30%);
   }
-  
-  #flip div:first-child {
-    animation: show 5s linear infinite;
-  }
-  
-  @keyframes show {
-    0% {
-      margin-top: -270px;
-    }
-  
-    5% {
-      margin-top: -180px;
-    }
-  
-    33% {
-      margin-top: -180px;
-    }
-  
-    38% {
-      margin-top: -90px;
-    }
-  
-    66% {
-      margin-top: -90px;
-    }
-  
-    71% {
-      margin-top: 0px;
-    }
-  
-    99.9% {
-      margin-top: 0px;
-    }
-  
-    100% {
-      margin-top: -270px;
-    }
-  }
+}
